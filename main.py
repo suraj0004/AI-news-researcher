@@ -6,7 +6,7 @@ from langchain_helper import create_vector_store, get_answer_from_vector_store
 
 
 st.title("AI News Researcher")
-st.sidebar.title("News Article URLs")
+st.sidebar.title("News Article URLs ( You can replace default url's with yours )")
 
 default_urls = [
     "https://www.livemint.com/entertainment/samay-raina-fans-can-t-keep-calm-as-indias-got-latent-clips-returns-to-youtube-igl-will-be-back-soon-11750324037759.html",
@@ -28,7 +28,7 @@ if st.sidebar.button("Process URLs"):
     st.session_state['urls_processed'] = True
 
 if st.session_state['urls_processed']:
-    query = st.text_input("Question:", key="query_input", value="Why 70 LPA not enough to live in metro city?")
+    query = st.text_input("Question:", key="query_input", placeholder="Ask a question about the news articles.")
     if st.button('Send'):
         print(st.session_state.query_input)
         main_progress_bar=st.empty()
