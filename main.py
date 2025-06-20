@@ -1,6 +1,6 @@
 import streamlit as st
 
-
+st.set_page_config(initial_sidebar_state="expanded")
 
 from langchain_helper import create_vector_store, get_answer_from_vector_store
 

@@ -4,6 +4,12 @@ This is a learning project where I have explored and learned various Langchain c
 
 AI News Researcher is a Streamlit web application that allows users to input news article URLs, process their content using AI-powered vector embeddings, and ask questions to get insightful answers based on the content of those articles.
 
+## Demo
+You can access the live demo of this project hosted on Streamlit Community Cloud at the following URL:
+
+[https://suraj0004-ai-news-researcher-main-fswmsr.streamlit.app/](https://suraj0004-ai-news-researcher-main-fswmsr.streamlit.app/)
+
+
 ## Screenshot
 
 ![Screenshot](screenshot.png)
